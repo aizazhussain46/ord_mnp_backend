@@ -60,7 +60,7 @@ class MaintenanceUserController extends Controller
         //$data = explode( ',', $image);
         fwrite( $ifp, base64_decode( $image));
         fclose( $ifp );
-        $filename = asset('uploads/requests/'.$filename); 
+        $filename = asset('public/uploads/requests/'.$filename); 
         }
         $insert = Maintenanceuser::create([
             'customer_id'=> $customer_id,
